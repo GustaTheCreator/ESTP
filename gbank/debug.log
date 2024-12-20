@@ -1,0 +1,965 @@
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',); alias=default
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" IN ('logentry')); args=('admin', 'logentry'); alias=default
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,); alias=default
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',); alias=default
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',); alias=default
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" IN ('permission', 'group')); args=('auth', 'permission', 'group'); alias=default
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3); alias=default
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',); alias=default
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',); alias=default
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" IN ('contenttype')); args=('contenttypes', 'contenttype'); alias=default
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,); alias=default
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',); alias=default
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',); alias=default
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" IN ('session')); args=('sessions', 'session'); alias=default
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,); alias=default
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',); alias=default
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'rest_framework_simplejwt'; args=('rest_framework_simplejwt',); alias=default
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'rest_framework_simplejwt'; args=('rest_framework_simplejwt',); alias=default
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'base'; args=('base',); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.000) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('base', 'user'), ('base', 'loanrequest') RETURNING "django_content_type"."id"; args=('base', 'user', 'base', 'loanrequest'); alias=default
+(0.000) COMMIT; args=None; alias=default
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'base' AND "django_content_type"."model" IN ('loanrequest', 'user')); args=('base', 'loanrequest', 'user'); alias=default
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8, 7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8, 7); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add user', 7, 'add_user'), ('Can change user', 7, 'change_user'), ('Can delete user', 7, 'delete_user'), ('Can view user', 7, 'view_user'), ('Can add loan request', 8, 'add_loanrequest'), ('Can change loan request', 8, 'change_loanrequest'), ('Can delete loan request', 8, 'delete_loanrequest'), ('Can view loan request', 8, 'view_loanrequest') RETURNING "auth_permission"."id"; args=('Can add user', 7, 'add_user', 'Can change user', 7, 'change_user', 'Can delete user', 7, 'delete_user', 'Can view user', 7, 'view_user', 'Can add loan request', 8, 'add_loanrequest', 'Can change loan request', 8, 'change_loanrequest', 'Can delete loan request', 8, 'delete_loanrequest', 'Can view loan request', 8, 'view_loanrequest'); alias=default
+(0.000) COMMIT; args=None; alias=default
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'base'; args=('base',); alias=default
+Watching for file changes with StatReloader
+Waiting for apps ready_event.
+Apps ready_event triggered. Sending autoreload_started signal.
+Watching dir C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates with glob **/*.
+Watching dir C:\Users\gugaa\Desktop\meta2\gbank\locale with glob **/*.mo.
+Watching dir C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale with glob **/*.mo.
+Watching dir C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale with glob **/*.mo.
+Watching dir C:\Users\gugaa\Desktop\meta2\gbank\base\locale with glob **/*.mo.
+Watching dir C:\Users\gugaa\Desktop\meta2\gbank\api\locale with glob **/*.mo.
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\weakref.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\bisect.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\sites\shortcuts.py first seen with mtime 1733330093.520534
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\utils.py first seen with mtime 1733330093.9006777
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\conf\__init__.py first seen with mtime 1733330089.7008362
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\exceptions.py first seen with mtime 1733330089.04325
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\cache\utils.py first seen with mtime 1733330093.7971373
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\sites\__init__.py first seen with mtime 1733330093.5115294
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\__init__.py first seen with mtime 1733330093.8946812
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\utils\formatting.py first seen with mtime 1734654032.4075394
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\_parseaddr.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\files\locks.py first seen with mtime 1733330093.8251371
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\numbers.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\futures.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\views\generic\edit.py first seen with mtime 1733330094.244297
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\log.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\mail\utils.py first seen with mtime 1733330093.8441374
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\__init__.py first seen with mtime 1734654032.230225
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\utils\json.py first seen with mtime 1734654032.409049
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\regex_helper.py first seen with mtime 1733330094.211294
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\urls\base.py first seen with mtime 1733330094.1742945
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\struct.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\DLLs\_uuid.pyd first seen with mtime 1696253228.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\asgiref\current_thread_executor.py first seen with mtime 1733330089.4535718
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\test\__init__.py first seen with mtime 1733330094.1652925
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\views\main.py first seen with mtime 1733330090.8358817
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\sessions\apps.py first seen with mtime 1733330093.1808984
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\DLLs\_wmi.pyd first seen with mtime 1696253228.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\migrations\operations\fields.py first seen with mtime 1733330093.9742181
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\validators.py first seen with mtime 1733330091.1680286
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\urls\conf.py first seen with mtime 1733330094.1742945
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\autoreload.py first seen with mtime 1733330094.134762
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\postgresql\__init__.py first seen with mtime 1733330093.9376857
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\sites.py first seen with mtime 1733330090.1740503
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\process.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\filters\others.py first seen with mtime 1733330089.059263
+File C:\Users\gugaa\Desktop\meta2\gbank\base\__init__.py first seen with mtime 1716218697.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\iterators.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\ssl.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\migrations\operations\models.py first seen with mtime 1733330093.9752197
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\pkgutil.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\wsgiref\headers.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\parser.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\base64mime.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\fractions.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\templatetags\tz.py first seen with mtime 1733330094.1642985
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\encoders.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\dis.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\filters\reindent.py first seen with mtime 1733330089.0607746
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\views\static.py first seen with mtime 1733330094.2302933
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\files\images.py first seen with mtime 1733330093.824139
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\xml\dom\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\glob.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\unittest\suite.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\secrets.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_futures.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\test\signals.py first seen with mtime 1733330094.169295
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\files\storage\__init__.py first seen with mtime 1733330093.8311408
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\forms\renderers.py first seen with mtime 1733330094.03122
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\html.py first seen with mtime 1733330094.2023003
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\mime\message.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\asyncio.py first seen with mtime 1733330094.1832962
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\inspect.py first seen with mtime 1733330094.2042944
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\sqlite3\features.py first seen with mtime 1733330093.9517026
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\zoneinfo\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\views\defaults.py first seen with mtime 1733330094.2282917
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\engine\filter_stack.py first seen with mtime 1733330089.0522637
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\__init__.py first seen with mtime 1733330093.7881446
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\_compat_pickle.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\DLLs\_socket.pyd first seen with mtime 1696253228.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\messages\middleware.py first seen with mtime 1733330092.6792917
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\staticfiles\management\commands\__init__.py first seen with mtime 1733330093.7811418
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\files\temp.py first seen with mtime 1733330093.8271391
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\hmac.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\trsock.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\management\__init__.py first seen with mtime 1733330091.448781
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\_virtualenv.py first seen with mtime 1733329750.9120834
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\lexer.py first seen with mtime 1733330089.0472674
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\utils.py first seen with mtime 1734654047.8473914
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\filters.py first seen with mtime 1733330090.1670127
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\management\commands\__init__.py first seen with mtime 1733330093.8591452
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\loader.py first seen with mtime 1733330094.143764
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\pickle.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\queue.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\crypto.py first seen with mtime 1733330094.1892982
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\unittest\result.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\ipaddress.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\importlib\abc.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\http\cookies.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\keywords.py first seen with mtime 1733330089.0462637
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\files\uploadhandler.py first seen with mtime 1733330093.8291407
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\copyreg.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\base\validation.py first seen with mtime 1733330093.9106805
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\string.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\staticfiles\utils.py first seen with mtime 1733330093.7781405
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\_meta.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\gbank\gbank\__init__.py first seen with mtime 1733330257.4822593
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\http\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\asgiref\local.py first seen with mtime 1733330089.4545696
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\mime\nonmultipart.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\encodings\utf_8.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\http.py first seen with mtime 1733330094.2032964
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\__init__.py first seen with mtime 1733330093.8976758
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\utils.py first seen with mtime 1733330090.1762986
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\context.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\wsgiref\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\forms\models.py first seen with mtime 1733330094.030223
+File C:\Users\gugaa\Desktop\meta2\gbank\base\apps.py first seen with mtime 1716218697.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\files\storage\mixins.py first seen with mtime 1733330093.8361373
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\messages\storage\__init__.py first seen with mtime 1733330092.6832874
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\functions\text.py first seen with mtime 1733330094.0112185
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\http\response.py first seen with mtime 1733330094.1237688
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\constants.py first seen with mtime 1733330093.9802232
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\termcolors.py first seen with mtime 1733330094.213291
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\utils.py first seen with mtime 1733330089.0502634
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\sql\datastructures.py first seen with mtime 1733330094.016218
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\sql\query.py first seen with mtime 1733330094.0182216
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\cache\__init__.py first seen with mtime 1733330093.7961376
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\functions\window.py first seen with mtime 1733330094.0122192
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\wsgiref\simple_server.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\dateformat.py first seen with mtime 1733330094.1902902
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\utils.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\text.py first seen with mtime 1733330094.2142916
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\dataclasses.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\fields\files.py first seen with mtime 1733330093.9962213
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\templatetags\static.py first seen with mtime 1733330094.1617706
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\renderers.py first seen with mtime 1734654032.243266
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\unittest\main.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\types.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\response.py first seen with mtime 1733330094.145771
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\collections\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\threading.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\random.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\forms\utils.py first seen with mtime 1733330094.0322194
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\socketserver.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\templatetags\l10n.py first seen with mtime 1733330094.1617706
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\contextvars.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\__init__.py first seen with mtime 1733330089.6938372
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\middleware\common.py first seen with mtime 1733330094.1277697
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\test\html.py first seen with mtime 1733330094.1672902
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\servers\basehttp.py first seen with mtime 1733330093.89368
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\lorem_ipsum.py first seen with mtime 1733330094.2092967
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\urllib\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\contenttypes\fields.py first seen with mtime 1733330091.471874
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\postgres\search.py first seen with mtime 1733330092.6942904
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\forms\fields.py first seen with mtime 1733330094.0262227
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\backends\base.py first seen with mtime 1733330094.1487718
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\views\__init__.py first seen with mtime 1733330090.832892
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\views\decorators\cache.py first seen with mtime 1733330094.2322953
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\wsgiref\util.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\DLLs\_zoneinfo.pyd first seen with mtime 1696253230.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\taskgroups.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\sessions\backends\base.py first seen with mtime 1733330093.1868951
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\fields\__init__.py first seen with mtime 1733330093.9952226
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\widgets.py first seen with mtime 1733330090.1773877
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\checks\caches.py first seen with mtime 1733330093.807141
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\base\client.py first seen with mtime 1733330093.9036758
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\_legacy.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\apps\registry.py first seen with mtime 1733330089.6988478
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\zoneinfo\_tzpath.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\token.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\files\storage\memory.py first seen with mtime 1733330093.8351412
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\choices.py first seen with mtime 1733330094.1872933
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\_markupbase.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\checks\compatibility\django_4_0.py first seen with mtime 1733330093.8161414
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\views\generic\__init__.py first seen with mtime 1733330094.240294
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\logging\handlers.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\utils\timezone.py first seen with mtime 1734654032.4120598
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\DLLs\_queue.pyd first seen with mtime 1696253228.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\utils.py first seen with mtime 1733330093.8966782
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\migrations\utils.py first seen with mtime 1733330093.9702244
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\forms\boundfield.py first seen with mtime 1733330094.0252247
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\json\scanner.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\loaders\base.py first seen with mtime 1733330094.1547658
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\ipv6.py first seen with mtime 1733330094.2042944
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\__init__.py first seen with mtime 1734654047.8408747
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\sql\subqueries.py first seen with mtime 1733330094.0192187
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\migrations\executor.py first seen with mtime 1733330093.959701
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\log.py first seen with mtime 1733330094.2072957
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\re\_parser.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\zoneinfo\_common.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\typing.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\urllib\parse.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\deletion.py first seen with mtime 1733330093.983218
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\options.py first seen with mtime 1733330090.1729314
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\management\commands\runserver.py first seen with mtime 1733330093.8726883
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\textwrap.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\numberformat.py first seen with mtime 1733330094.2102952
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\serializers\json.py first seen with mtime 1733330093.887677
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\argparse.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\encoding.py first seen with mtime 1733330094.1972938
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\contenttypes\management\__init__.py first seen with mtime 1733330091.730542
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\nturl2path.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\sessions\middleware.py first seen with mtime 1733330093.1838987
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\DLLs\_overlapped.pyd first seen with mtime 1696253230.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\decorators.py first seen with mtime 1733330091.1565037
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\base\__init__.py first seen with mtime 1733330093.9016836
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\helpers.py first seen with mtime 1733330090.1700115
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\locks.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\aggregates.py first seen with mtime 1733330093.9782214
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\_os.py first seen with mtime 1733330094.1812978
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\mimetypes.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\templatetags\cache.py first seen with mtime 1733330094.1597722
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\contenttypes\admin.py first seen with mtime 1733330091.4688725
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\_adapters.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\decorators.py first seen with mtime 1733330094.1942914
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\checks\__init__.py first seen with mtime 1733330093.8061378
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\staggered.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\contenttypes\views.py first seen with mtime 1733330091.4758756
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\settings.py first seen with mtime 1734654032.2473767
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\selector_events.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\DLLs\_asyncio.pyd first seen with mtime 1696253228.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\checks\security\sessions.py first seen with mtime 1733330093.820141
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\checks\security\__init__.py first seen with mtime 1733330093.8171382
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\query.py first seen with mtime 1733330093.9912236
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\reverse.py first seen with mtime 1734654032.2452672
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\utils\field_mapping.py first seen with mtime 1734654032.4065285
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\shutil.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\urls\resolvers.py first seen with mtime 1733330094.1782978
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\migrations\operations\base.py first seen with mtime 1733330093.9732206
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\policy.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\unittest\util.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\DLLs\_sqlite3.pyd first seen with mtime 1696253230.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\DLLs\_ssl.pyd first seen with mtime 1696253230.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\checks\templates.py first seen with mtime 1733330093.8131385
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\smartif.py first seen with mtime 1733330094.1467636
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\compat.py first seen with mtime 1734654032.2332387
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\forms\widgets.py first seen with mtime 1733330094.0332167
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\charset.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\feedparser.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\signals.py first seen with mtime 1733330093.7921398
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\status.py first seen with mtime 1734654032.2473767
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\middleware\security.py first seen with mtime 1733330094.132767
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\generator.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\staticfiles\views.py first seen with mtime 1733330093.7791417
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\mime\text.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\platform.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\reprlib.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\contentmanager.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\DLLs\_decimal.pyd first seen with mtime 1696253228.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\cache\backends\locmem.py first seen with mtime 1733330093.8031392
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\base\operations.py first seen with mtime 1733330093.9076793
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\abc.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\apps.py first seen with mtime 1734654032.2312257
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\files\utils.py first seen with mtime 1733330093.8301382
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\timesince.py first seen with mtime 1733330094.2152922
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\apps\config.py first seen with mtime 1733330089.6988478
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\pprint.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\DLLs\_lzma.pyd first seen with mtime 1696253228.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\cache\backends\__init__.py first seen with mtime 1733330093.798134
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\module_loading.py first seen with mtime 1733330094.2092967
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\zipfile\_path\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\gbank\base\models.py first seen with mtime 1734663538.0364974
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\conf\urls\__init__.py first seen with mtime 1733330090.15449
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\enums.py first seen with mtime 1733330093.9842255
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\engine.py first seen with mtime 1733330094.1407664
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\views\i18n.py first seen with mtime 1733330094.2292929
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\logging\config.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\management\sql.py first seen with mtime 1733330093.8551466
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\concurrent\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\serializers.py first seen with mtime 1734654032.2462652
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\exceptions.py first seen with mtime 1733330094.1417687
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\sslproto.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\importlib\_abc.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\constants.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\errors.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\_itertools.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\opcode.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\management\base.py first seen with mtime 1733330093.853145
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\encodings\aliases.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\actions.py first seen with mtime 1733330090.1610048
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\statistics.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\checks\model_checks.py first seen with mtime 1733330093.8111393
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\urllib\response.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\keyword.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\deprecation.py first seen with mtime 1733330094.1952925
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\zipfile\__main__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\views\decorators\debug.py first seen with mtime 1733330094.236296
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\cache\backends\filebased.py first seen with mtime 1733330093.8021443
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\_header_value_parser.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\migrations\state.py first seen with mtime 1733330093.9692247
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\fields\related_descriptors.py first seen with mtime 1733330094.002221
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\lookups.py first seen with mtime 1733330093.9882193
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\forms\forms.py first seen with mtime 1733330094.0272262
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\headerregistry.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\signal.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\apps.py first seen with mtime 1733330091.1495087
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\forms\__init__.py first seen with mtime 1733330094.0242217
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\DLLs\unicodedata.pyd first seen with mtime 1696253230.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\management\color.py first seen with mtime 1733330093.8541489
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\_functools.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\message.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\version.py first seen with mtime 1733330094.2182968
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\handlers\base.py first seen with mtime 1733330093.8391392
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\files\move.py first seen with mtime 1733330093.8261364
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\__init__.py first seen with mtime 1733330093.9772184
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\loaders\filesystem.py first seen with mtime 1733330094.1577716
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\files\storage\handler.py first seen with mtime 1733330093.8341348
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\serializers\base.py first seen with mtime 1733330093.886676
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\signals.py first seen with mtime 1733330093.9932232
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\paginator.py first seen with mtime 1733330093.791146
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\handlers\__init__.py first seen with mtime 1733330093.8371432
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\messages\__init__.py first seen with mtime 1733330092.6742845
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\postgres\lookups.py first seen with mtime 1733330092.692289
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\shortcuts.py first seen with mtime 1733330089.6958382
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\urls\exceptions.py first seen with mtime 1733330094.1762967
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\bz2.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\contenttypes\models.py first seen with mtime 1733330091.473875
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\sqlite3\__init__.py first seen with mtime 1733330093.946684
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\conf\locale\__init__.py first seen with mtime 1733330089.709841
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\sqlite3\introspection.py first seen with mtime 1733330093.952701
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\forms\formsets.py first seen with mtime 1733330094.028224
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\models.py first seen with mtime 1733330091.1620176
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\ast.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\html\entities.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\backends\__init__.py first seen with mtime 1733330094.1487718
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\checks\registry.py first seen with mtime 1733330093.8121405
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\urls\utils.py first seen with mtime 1733330094.1793003
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\_text.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\options.py first seen with mtime 1733330093.9892206
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\constraints.py first seen with mtime 1733330093.9822197
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\views\debug.py first seen with mtime 1733330094.227309
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\middleware\clickjacking.py first seen with mtime 1733330094.126766
+File C:\Users\gugaa\Desktop\meta2\gbank\base\admin.py first seen with mtime 1716218697.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\DLLs\_bz2.pyd first seen with mtime 1696253230.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\signals.py first seen with mtime 1733330091.1640277
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\_common.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\contenttypes\apps.py first seen with mtime 1733330091.4698758
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\hashlib.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\serializers\python.py first seen with mtime 1733330093.88968
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\defaultfilters.py first seen with mtime 1733330094.1387675
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\reduction.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\models.py first seen with mtime 1734654047.8438692
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\hashers.py first seen with mtime 1733330091.1585019
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\indexes.py first seen with mtime 1733330093.987217
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\query_utils.py first seen with mtime 1733330093.9922192
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\sqlite3\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\hashable.py first seen with mtime 1733330094.2012978
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\tokens.py first seen with mtime 1733330091.1660285
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\servers\__init__.py first seen with mtime 1733330093.8926802
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\subprocess.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\sql\constants.py first seen with mtime 1733330094.0152192
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\lzma.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\_adapters.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\staticfiles\checks.py first seen with mtime 1733330093.7721412
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\admin.py first seen with mtime 1733330091.1484993
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\operator.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\checks\translation.py first seen with mtime 1733330093.8141408
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\dateparse.py first seen with mtime 1733330094.1912892
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\__init__.py first seen with mtime 1733330090.1584885
+File C:\Users\gugaa\Desktop\meta2\gbank\gbank\urls.py first seen with mtime 1734652407.9221156
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\warnings.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\mime\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\base_user.py first seen with mtime 1733330091.151498
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\test\client.py first seen with mtime 1733330094.166298
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\__init__.py first seen with mtime 1733330094.1337695
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\gettext.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\heapq.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\gbank\manage.py first seen with mtime 1734653492.323787
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\views\generic\dates.py first seen with mtime 1733330094.2422955
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\migrations\exceptions.py first seen with mtime 1733330093.9586964
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\checks\async_checks.py first seen with mtime 1733330093.807141
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\uuid.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\xml\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\selectors.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\relations.py first seen with mtime 1734654032.242267
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\views.py first seen with mtime 1733330091.1690364
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\unittest\runner.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\functional.py first seen with mtime 1733330094.200292
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\postgres\utils.py first seen with mtime 1733330092.697288
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\sqlite3\schema.py first seen with mtime 1733330093.954697
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\loaders\app_directories.py first seen with mtime 1733330094.1547658
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\fnmatch.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\ctypes\_endian.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\utils\model_meta.py first seen with mtime 1734654032.410054
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\wsgi.py first seen with mtime 1733330093.7951374
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\checks\database.py first seen with mtime 1733330093.8081381
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\urllib\error.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\http\server.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\middleware\csrf.py first seen with mtime 1733330094.1287668
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\templatetags\i18n.py first seen with mtime 1733330094.1607733
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\enum.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\difflib.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\backends\django.py first seen with mtime 1733330094.1497734
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\functions\__init__.py first seen with mtime 1733330094.0052197
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\templatetags\admin_modify.py first seen with mtime 1733330090.8288808
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\utils\__init__.py first seen with mtime 1734654032.405021
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\http\client.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\http\__init__.py first seen with mtime 1733330094.1207685
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\tree.py first seen with mtime 1733330094.2172935
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_utils.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\linecache.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\__init__.py first seen with mtime 1733330090.1594942
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\cache\backends\base.py first seen with mtime 1733330093.7991457
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\dates.py first seen with mtime 1733330094.1922927
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\tempfile.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\pathlib.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\templatetags\__init__.py first seen with mtime 1733330094.1587725
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\functions\datetime.py first seen with mtime 1733330094.007224
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\sessions\__init__.py first seen with mtime 1733330093.1799033
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\checks\urls.py first seen with mtime 1733330093.8151407
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\datetime.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\messages\storage\base.py first seen with mtime 1733330092.6842892
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\test\testcases.py first seen with mtime 1733330094.171296
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\filters\right_margin.py first seen with mtime 1733330089.0617878
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\models.py first seen with mtime 1733330090.1710148
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\unittest\loader.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\copy.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\coroutines.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\contenttypes\forms.py first seen with mtime 1733330091.472872
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\fields\reverse_related.py first seen with mtime 1733330094.0042222
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\filters\output.py first seen with mtime 1733330089.0607746
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\tokenize.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\xml\dom\xmlbuilder.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\handlers\wsgi.py first seen with mtime 1733330093.841137
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\views\csrf.py first seen with mtime 1733330094.2262912
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\validators.py first seen with mtime 1734654032.2518926
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\checks.py first seen with mtime 1734654032.232235
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\decorators.py first seen with mtime 1733330090.1650145
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\validators.py first seen with mtime 1733330093.7941413
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\translation\trans_real.py first seen with mtime 1733330094.2242937
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\settings.py first seen with mtime 1734654047.8463848
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\sessions\backends\__init__.py first seen with mtime 1733330093.1858952
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\library.py first seen with mtime 1733330094.1427684
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\postgres\__init__.py first seen with mtime 1733330092.6872928
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\socket.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\postgres\forms\array.py first seen with mtime 1733330092.7092834
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\asgiref\sync.py first seen with mtime 1733330089.4575746
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\_collections.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\http\multipartparser.py first seen with mtime 1733330094.1227636
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\utils\humanize_datetime.py first seen with mtime 1734654032.409049
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\sysconfig.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\views\__init__.py first seen with mtime 1733330094.2252972
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\postgres\forms\hstore.py first seen with mtime 1733330092.7102857
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\sessions\exceptions.py first seen with mtime 1733330093.1829004
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\expressions.py first seen with mtime 1733330093.9852238
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\unittest\signals.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\duration.py first seen with mtime 1733330094.1962943
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\autoreload.py first seen with mtime 1733330094.1842916
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\html\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\utils.py first seen with mtime 1733330093.9942224
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\re\_constants.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\functions\mixins.py first seen with mtime 1733330094.0102139
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\messages\constants.py first seen with mtime 1733330092.677289
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\checks\files.py first seen with mtime 1733330093.8091378
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\xml\dom\minicompat.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\tokens.py first seen with mtime 1733330089.0492632
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\translation\reloader.py first seen with mtime 1733330094.221294
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\utils\serializer_helpers.py first seen with mtime 1734654032.4110577
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\files\base.py first seen with mtime 1733330093.823137
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\DLLs\_hashlib.pyd first seen with mtime 1696253228.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\threads.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\views\decorators\common.py first seen with mtime 1733330094.2342925
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\fields\proxy.py first seen with mtime 1733330094.0002213
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\signals.py first seen with mtime 1733330093.8996809
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\staticfiles\finders.py first seen with mtime 1733330093.773143
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\handlers\asgi.py first seen with mtime 1733330093.8381374
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\base\base.py first seen with mtime 1733330093.9026806
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\test\utils.py first seen with mtime 1733330094.1722987
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\utils\urls.py first seen with mtime 1734654032.4130597
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\__future__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\__init__.py first seen with mtime 1733330089.0392518
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\sqlite3\_functions.py first seen with mtime 1733330093.9476867
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\migrations\operations\__init__.py first seen with mtime 1733330093.9722226
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\templatetags\__init__.py first seen with mtime 1733330090.8268747
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templatetags\__init__.py first seen with mtime 1734654032.4030213
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\exceptions.py first seen with mtime 1733330090.1660154
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\backends.py first seen with mtime 1733330091.1504917
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\re\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\handlers\exception.py first seen with mtime 1733330093.8401413
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\templatetags\base.py first seen with mtime 1733330090.8308773
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\getpass.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\mime\multipart.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\html\parser.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\checks\compatibility\__init__.py first seen with mtime 1733330093.8161414
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\fields\related.py first seen with mtime 1733330094.0012257
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\transaction.py first seen with mtime 1733330093.8956814
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\middleware\cache.py first seen with mtime 1733330094.125765
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\views\autocomplete.py first seen with mtime 1733330090.833881
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\signing.py first seen with mtime 1733330093.7931428
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\staticfiles\management\__init__.py first seen with mtime 1733330093.7801437
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\gzip.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\protocols.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\middleware.py first seen with mtime 1733330091.159505
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\staticfiles\handlers.py first seen with mtime 1733330093.7741406
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\sqlite3\client.py first seen with mtime 1733330093.9496984
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\fields\generated.py first seen with mtime 1733330093.997221
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\filters\__init__.py first seen with mtime 1733330089.05727
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\apps.py first seen with mtime 1733330090.1620111
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\views\decorators\__init__.py first seen with mtime 1733330094.231292
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\xml\dom\NodeFilter.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\sql.py first seen with mtime 1733330089.0482626
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\zipfile\_path\glob.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\inspect.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\mail\__init__.py first seen with mtime 1733330093.8421333
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\fields\mixins.py first seen with mtime 1733330093.9992177
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\checks.py first seen with mtime 1733330091.1524997
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\_policybase.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\re\_casefix.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\gbank\gbank\settings.py first seen with mtime 1734663466.548114
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\__init__.py first seen with mtime 1733330094.1802938
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\streams.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\views\generic\list.py first seen with mtime 1733330094.2452962
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\checks\messages.py first seen with mtime 1733330093.8101351
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\base.py first seen with mtime 1733330093.9802232
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\utils\representation.py first seen with mtime 1734654032.4110577
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\cli.py first seen with mtime 1733330089.042247
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\forms.py first seen with mtime 1733330091.157501
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\quoprimime.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_subprocess.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\migrations\__init__.py first seen with mtime 1733330093.9566977
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\sql\__init__.py first seen with mtime 1733330094.0132167
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\base\creation.py first seen with mtime 1733330093.9046795
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\exceptions.py first seen with mtime 1733330093.7901428
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\migrations\operations\special.py first seen with mtime 1733330093.9762144
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\sessions\models.py first seen with mtime 1733330093.1849022
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\utils\breadcrumbs.py first seen with mtime 1734654032.405021
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\calendar.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\locale.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templatetags\rest_framework.py first seen with mtime 1734654032.4040184
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\formats.py first seen with mtime 1733330094.1992972
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\views\generic\base.py first seen with mtime 1733330094.2412922
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\graphlib.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\staticfiles\management\commands\runserver.py first seen with mtime 1733330093.7841437
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\conf\global_settings.py first seen with mtime 1733330089.7018354
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\messages\utils.py first seen with mtime 1733330092.6812878
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\cache.py first seen with mtime 1733330094.1862895
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\ctypes\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\fields\related_lookups.py first seen with mtime 1733330094.0032234
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\xml\dom\domreg.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\views\decorators\csrf.py first seen with mtime 1733330094.2353
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\base\schema.py first seen with mtime 1733330093.9096806
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\fields.py first seen with mtime 1734654032.2362149
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\views\generic\detail.py first seen with mtime 1733330094.2432942
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\sqlite3\base.py first seen with mtime 1733330093.9486947
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\engine\__init__.py first seen with mtime 1733330089.0512607
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\fields\json.py first seen with mtime 1733330093.9982238
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\sites\requests.py first seen with mtime 1733330093.519531
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\files\uploadedfile.py first seen with mtime 1733330093.8281395
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\base\introspection.py first seen with mtime 1733330093.906683
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\base.py first seen with mtime 1733330094.1357672
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\header.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\manager.py first seen with mtime 1733330093.9882193
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\context.py first seen with mtime 1733330094.1367643
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\DLLs\_ctypes.pyd first seen with mtime 1696253228.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\files\storage\filesystem.py first seen with mtime 1733330093.8331406
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\sqlite3\creation.py first seen with mtime 1733330093.9506938
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\http\request.py first seen with mtime 1733330094.1227636
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\encodings\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\sqlite3\operations.py first seen with mtime 1733330093.9537003
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\filters\aligned_indent.py first seen with mtime 1733330089.0582628
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\base\features.py first seen with mtime 1733330093.9056828
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\connection.py first seen with mtime 1733330094.1882958
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\exceptions.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\utils\html.py first seen with mtime 1734654032.4075394
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\management\__init__.py first seen with mtime 1733330093.8521445
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\urls\converters.py first seen with mtime 1733330094.1752896
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\sessions\base_session.py first seen with mtime 1733330093.1819034
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\checks.py first seen with mtime 1733330090.1630135
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\unittest\case.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\format_helpers.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\sqlite3\dbapi2.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\contextlib.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\mime\base.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\traceback.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\contenttypes\__init__.py first seen with mtime 1733330091.467872
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\backends\ddl_references.py first seen with mtime 1733330093.8986819
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\functions\math.py first seen with mtime 1733330094.0082283
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\timezone.py first seen with mtime 1733330094.2162938
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\templatetags\log.py first seen with mtime 1733330090.8318777
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\__init__.py first seen with mtime 1733330091.147496
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\ctypes\wintypes.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\xml\dom\minidom.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\filters\tokens.py first seen with mtime 1733330089.0627854
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\_encoded_words.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\subprocess.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\DLLs\select.pyd first seen with mtime 1696253228.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\exceptions.py first seen with mtime 1734654032.2352269
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\templatetags\admin_urls.py first seen with mtime 1733330090.829879
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\datastructures.py first seen with mtime 1733330094.1892982
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\messages\api.py first seen with mtime 1733330092.6752872
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\deconstruct.py first seen with mtime 1733330094.1932998
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\functools.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\timeouts.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\checks\security\csrf.py first seen with mtime 1733330093.8191366
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\apps\__init__.py first seen with mtime 1733330089.6968446
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\csv.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\asgiref\__init__.py first seen with mtime 1733330089.452572
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\utils\encoders.py first seen with mtime 1734654032.405021
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\functions\comparison.py first seen with mtime 1733330094.0062196
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\sql\where.py first seen with mtime 1733330094.0202138
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\staticfiles\__init__.py first seen with mtime 1733330093.7701354
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\urls\__init__.py first seen with mtime 1733330094.1732948
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\unittest\mock.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\checks\security\base.py first seen with mtime 1733330093.8181334
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\serializers\__init__.py first seen with mtime 1733330093.8856764
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\password_validation.py first seen with mtime 1733330091.1630297
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\messages\apps.py first seen with mtime 1733330092.6762862
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\middleware\__init__.py first seen with mtime 1733330094.1247618
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\loader_tags.py first seen with mtime 1733330094.1447654
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\files\storage\base.py first seen with mtime 1733330093.8321414
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\queues.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py first seen with mtime 1733330090.8278742
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\dispatch\dispatcher.py first seen with mtime 1733330094.0222213
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\loaders\__init__.py first seen with mtime 1733330094.1537669
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\unittest\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\request.py first seen with mtime 1734654032.243266
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\base64.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\transports.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\mail\message.py first seen with mtime 1733330093.8431382
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\formatter.py first seen with mtime 1733330089.0442495
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_tasks.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\asyncio\mixins.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\_weakrefset.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\staticfiles\apps.py first seen with mtime 1733330093.7711406
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\migrations\migration.py first seen with mtime 1733330093.964225
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\defaulttags.py first seen with mtime 1733330094.1407664
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\engine\grouping.py first seen with mtime 1733330089.0542724
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\sqlparse\engine\statement_splitter.py first seen with mtime 1733330089.055271
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\contenttypes\checks.py first seen with mtime 1733330091.4708743
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\dispatch\__init__.py first seen with mtime 1733330094.021214
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\safestring.py first seen with mtime 1733330094.212296
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\postgres\validators.py first seen with mtime 1733330092.698287
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\decimal.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\loaders\cached.py first seen with mtime 1733330094.1557717
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\collections\abc.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\email\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\quopri.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\wsgiref\handlers.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\__init__.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\http\cookie.py first seen with mtime 1733330094.121764
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\_compression.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\utils\translation\__init__.py first seen with mtime 1733330094.2202966
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\files\__init__.py first seen with mtime 1733330093.822138
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\re\_compiler.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\utils.py first seen with mtime 1733330094.1477616
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework first seen with mtime 1734654032.396439
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\admin first seen with mtime 1734654032.3673337
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\admin.html first seen with mtime 1734654032.3612244
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\api.html first seen with mtime 1734654032.3622265
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\base.html first seen with mtime 1734654032.3622265
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\docs first seen with mtime 1734654032.3748536
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\filters first seen with mtime 1734654032.3798883
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\horizontal first seen with mtime 1734654032.3864
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\inline first seen with mtime 1734654032.3944383
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\login.html first seen with mtime 1734654032.3632276
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\login_base.html first seen with mtime 1734654032.3632276
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\pagination first seen with mtime 1734654032.3954403
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\raw_data_form.html first seen with mtime 1734654032.3642275
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\schema.js first seen with mtime 1734654032.3652275
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\vertical first seen with mtime 1734654032.4030213
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\admin\detail.html first seen with mtime 1734654032.3652275
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\admin\dict_value.html first seen with mtime 1734654032.3662276
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\admin\list.html first seen with mtime 1734654032.3662276
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\admin\list_value.html first seen with mtime 1734654032.3673337
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\admin\simple_list_value.html first seen with mtime 1734654032.3673337
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\docs\auth first seen with mtime 1734654032.373855
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\docs\document.html first seen with mtime 1734654032.3688443
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\docs\error.html first seen with mtime 1734654032.3688443
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\docs\index.html first seen with mtime 1734654032.369852
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\docs\interact.html first seen with mtime 1734654032.3708549
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\docs\langs first seen with mtime 1734654032.3773706
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\docs\link.html first seen with mtime 1734654032.3718538
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\docs\sidebar.html first seen with mtime 1734654032.3718538
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\filters\base.html first seen with mtime 1734654032.3788805
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\filters\ordering.html first seen with mtime 1734654032.3788805
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\filters\search.html first seen with mtime 1734654032.3798883
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\horizontal\checkbox.html first seen with mtime 1734654032.3808887
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\horizontal\checkbox_multiple.html first seen with mtime 1734654032.3808887
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\horizontal\dict_field.html first seen with mtime 1734654032.3818893
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\horizontal\fieldset.html first seen with mtime 1734654032.382892
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\horizontal\form.html first seen with mtime 1734654032.382892
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\horizontal\input.html first seen with mtime 1734654032.3838882
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\horizontal\list_field.html first seen with mtime 1734654032.3838882
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\horizontal\list_fieldset.html first seen with mtime 1734654032.3848913
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\horizontal\radio.html first seen with mtime 1734654032.3848913
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\horizontal\select.html first seen with mtime 1734654032.3848913
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\horizontal\select_multiple.html first seen with mtime 1734654032.3864
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\horizontal\textarea.html first seen with mtime 1734654032.3874102
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\inline\checkbox.html first seen with mtime 1734654032.3874102
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\inline\checkbox_multiple.html first seen with mtime 1734654032.3889208
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\inline\dict_field.html first seen with mtime 1734654032.3889208
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\inline\fieldset.html first seen with mtime 1734654032.3904302
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\inline\form.html first seen with mtime 1734654032.3904302
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\inline\input.html first seen with mtime 1734654032.3914423
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\inline\list_field.html first seen with mtime 1734654032.3914423
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\inline\list_fieldset.html first seen with mtime 1734654032.3924406
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\inline\radio.html first seen with mtime 1734654032.3924406
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\inline\select.html first seen with mtime 1734654032.3934426
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\inline\select_multiple.html first seen with mtime 1734654032.3934426
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\inline\textarea.html first seen with mtime 1734654032.3944383
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\pagination\numbers.html first seen with mtime 1734654032.3954403
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\pagination\previous_and_next.html first seen with mtime 1734654032.3954403
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\vertical\checkbox.html first seen with mtime 1734654032.396439
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\vertical\checkbox_multiple.html first seen with mtime 1734654032.3975003
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\vertical\dict_field.html first seen with mtime 1734654032.3975003
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\vertical\fieldset.html first seen with mtime 1734654032.399011
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\vertical\form.html first seen with mtime 1734654032.399011
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\vertical\input.html first seen with mtime 1734654032.4000216
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\vertical\list_field.html first seen with mtime 1734654032.4000216
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\vertical\list_fieldset.html first seen with mtime 1734654032.4010205
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\vertical\radio.html first seen with mtime 1734654032.4010205
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\vertical\select.html first seen with mtime 1734654032.4020193
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\vertical\select_multiple.html first seen with mtime 1734654032.4020193
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\vertical\textarea.html first seen with mtime 1734654032.4030213
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\docs\auth\basic.html first seen with mtime 1734654032.372853
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\docs\auth\session.html first seen with mtime 1734654032.373855
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\docs\auth\token.html first seen with mtime 1734654032.373855
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\docs\langs\javascript-intro.html first seen with mtime 1734654032.3748536
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\docs\langs\javascript.html first seen with mtime 1734654032.3748536
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\docs\langs\python-intro.html first seen with mtime 1734654032.376362
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\docs\langs\python.html first seen with mtime 1734654032.376362
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\docs\langs\shell-intro.html first seen with mtime 1734654032.3773706
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\templates\rest_framework\docs\langs\shell.html first seen with mtime 1734654032.3773706
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\ach\LC_MESSAGES\django.mo first seen with mtime 1734654032.2639232
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\ar\LC_MESSAGES\django.mo first seen with mtime 1734654032.2649202
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\az\LC_MESSAGES\django.mo first seen with mtime 1734654032.266426
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\be\LC_MESSAGES\django.mo first seen with mtime 1734654032.2674327
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\bg\LC_MESSAGES\django.mo first seen with mtime 1734654032.2674327
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\ca\LC_MESSAGES\django.mo first seen with mtime 1734654032.2689395
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\ca_ES\LC_MESSAGES\django.mo first seen with mtime 1734654032.269949
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\cs\LC_MESSAGES\django.mo first seen with mtime 1734654032.2709508
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\da\LC_MESSAGES\django.mo first seen with mtime 1734654032.2719502
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\de\LC_MESSAGES\django.mo first seen with mtime 1734654032.2729506
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\el\LC_MESSAGES\django.mo first seen with mtime 1734654032.2739496
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\el_GR\LC_MESSAGES\django.mo first seen with mtime 1734654032.2749488
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\en\LC_MESSAGES\django.mo first seen with mtime 1734654032.2764556
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\en_AU\LC_MESSAGES\django.mo first seen with mtime 1734654032.2774665
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\en_CA\LC_MESSAGES\django.mo first seen with mtime 1734654032.2774665
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\en_US\LC_MESSAGES\django.mo first seen with mtime 1734654032.2789752
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\es\LC_MESSAGES\django.mo first seen with mtime 1734654032.2799807
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\et\LC_MESSAGES\django.mo first seen with mtime 1734654032.2809808
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\fa\LC_MESSAGES\django.mo first seen with mtime 1734654032.281983
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\fa_IR\LC_MESSAGES\django.mo first seen with mtime 1734654032.282982
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\fi\LC_MESSAGES\django.mo first seen with mtime 1734654032.2839818
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\fr\LC_MESSAGES\django.mo first seen with mtime 1734654032.2849817
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\fr_CA\LC_MESSAGES\django.mo first seen with mtime 1734654032.2849817
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\gl\LC_MESSAGES\django.mo first seen with mtime 1734654032.2864938
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\gl_ES\LC_MESSAGES\django.mo first seen with mtime 1734654032.2875016
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\he_IL\LC_MESSAGES\django.mo first seen with mtime 1734654032.2875016
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\hu\LC_MESSAGES\django.mo first seen with mtime 1734654032.2890103
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\hy\LC_MESSAGES\django.mo first seen with mtime 1734654032.2905178
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\id\LC_MESSAGES\django.mo first seen with mtime 1734654032.2915301
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\it\LC_MESSAGES\django.mo first seen with mtime 1734654032.2925277
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\ja\LC_MESSAGES\django.mo first seen with mtime 1734654032.2935286
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\ko_KR\LC_MESSAGES\django.mo first seen with mtime 1734654032.2945273
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\lt\LC_MESSAGES\django.mo first seen with mtime 1734654032.295527
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\lv\LC_MESSAGES\django.mo first seen with mtime 1734654032.2970352
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\mk\LC_MESSAGES\django.mo first seen with mtime 1734654032.298044
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\nb\LC_MESSAGES\django.mo first seen with mtime 1734654032.2990434
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\ne_NP\LC_MESSAGES\django.mo first seen with mtime 1734654032.300043
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\nl\LC_MESSAGES\django.mo first seen with mtime 1734654032.3010414
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\nn\LC_MESSAGES\django.mo first seen with mtime 1734654032.3030438
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\no\LC_MESSAGES\django.mo first seen with mtime 1734654032.304046
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\pl\LC_MESSAGES\django.mo first seen with mtime 1734654032.3050475
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\pt\LC_MESSAGES\django.mo first seen with mtime 1734654032.3065546
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\pt_BR\LC_MESSAGES\django.mo first seen with mtime 1734654032.307561
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\pt_PT\LC_MESSAGES\django.mo first seen with mtime 1734654032.307561
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\ro\LC_MESSAGES\django.mo first seen with mtime 1734654032.3090677
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\ru\LC_MESSAGES\django.mo first seen with mtime 1734654032.3100727
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\ru_RU\LC_MESSAGES\django.mo first seen with mtime 1734654032.3110766
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\sk\LC_MESSAGES\django.mo first seen with mtime 1734654032.3120735
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\sl\LC_MESSAGES\django.mo first seen with mtime 1734654032.3130758
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\sv\LC_MESSAGES\django.mo first seen with mtime 1734654032.3140743
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\th\LC_MESSAGES\django.mo first seen with mtime 1734654032.315079
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\tr\LC_MESSAGES\django.mo first seen with mtime 1734654032.315079
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\tr_TR\LC_MESSAGES\django.mo first seen with mtime 1734654032.316588
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\uk\LC_MESSAGES\django.mo first seen with mtime 1734654032.317597
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\vi\LC_MESSAGES\django.mo first seen with mtime 1734654032.319105
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\zh_CN\LC_MESSAGES\django.mo first seen with mtime 1734654032.320112
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\zh_Hans\LC_MESSAGES\django.mo first seen with mtime 1734654032.3211124
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\zh_Hant\LC_MESSAGES\django.mo first seen with mtime 1734654032.3221161
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework\locale\zh_TW\LC_MESSAGES\django.mo first seen with mtime 1734654032.3231113
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\ar\LC_MESSAGES\django.mo first seen with mtime 1734654047.8499055
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\cs\LC_MESSAGES\django.mo first seen with mtime 1734654047.8509054
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\de\LC_MESSAGES\django.mo first seen with mtime 1734654047.8529034
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\es\LC_MESSAGES\django.mo first seen with mtime 1734654047.8539033
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\es_AR\LC_MESSAGES\django.mo first seen with mtime 1734654047.8549078
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\es_CL\LC_MESSAGES\django.mo first seen with mtime 1734654047.8574183
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\fa\LC_MESSAGES\django.mo first seen with mtime 1734654047.8589318
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\fa_IR\LC_MESSAGES\django.mo first seen with mtime 1734654047.8609486
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\fr\LC_MESSAGES\django.mo first seen with mtime 1734654047.862946
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\he_IL\LC_MESSAGES\django.mo first seen with mtime 1734654047.8649473
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\id_ID\LC_MESSAGES\django.mo first seen with mtime 1734654047.8664608
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\it_IT\LC_MESSAGES\django.mo first seen with mtime 1734654047.8689866
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\ko_KR\LC_MESSAGES\django.mo first seen with mtime 1734654047.8710003
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\nl_NL\LC_MESSAGES\django.mo first seen with mtime 1734654047.8730016
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\pl_PL\LC_MESSAGES\django.mo first seen with mtime 1734654047.8750043
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\pt_BR\LC_MESSAGES\django.mo first seen with mtime 1734654047.8775296
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\ro\LC_MESSAGES\django.mo first seen with mtime 1734654047.8800547
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\ru_RU\LC_MESSAGES\django.mo first seen with mtime 1734654047.8820553
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\sl\LC_MESSAGES\django.mo first seen with mtime 1734654047.8840563
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\sv\LC_MESSAGES\django.mo first seen with mtime 1734654047.8850565
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\tr\LC_MESSAGES\django.mo first seen with mtime 1734654047.8875854
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\uk_UA\LC_MESSAGES\django.mo first seen with mtime 1734654047.889099
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\rest_framework_simplejwt\locale\zh_Hans\LC_MESSAGES\django.mo first seen with mtime 1734654047.8931127
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\migrations\0011_update_proxy_permissions.py first seen with mtime 1733330091.461774
+File C:\Users\gugaa\Desktop\meta2\gbank\gbank\wsgi.py first seen with mtime 1734652424.1136606
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\migrations\0001_initial.py first seen with mtime 1733330090.6478388
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\migrations\__init__.py first seen with mtime 1733330091.4638777
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\migrations\0012_alter_user_first_name_max_length.py first seen with mtime 1733330091.4628808
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\migrations\0007_alter_validators_add_error_messages.py first seen with mtime 1733330091.4587796
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\migrations\0003_alter_user_email_max_length.py first seen with mtime 1733330091.4547818
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\migrations\0001_initial.py first seen with mtime 1733330091.452774
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\contenttypes\migrations\0002_remove_content_type_name.py first seen with mtime 1733330091.7355409
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\migrations\0008_alter_user_username_max_length.py first seen with mtime 1733330091.4597766
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\contenttypes\migrations\__init__.py first seen with mtime 1733330091.7355409
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\migrations\0002_alter_permission_name_max_length.py first seen with mtime 1733330091.4537826
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\migrations\0010_alter_group_name_max_length.py first seen with mtime 1733330091.461774
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\encodings\idna.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\migrations\recorder.py first seen with mtime 1733330093.9672165
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\migrations\0005_alter_user_last_login_null.py first seen with mtime 1733330091.4567807
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\migrations\0003_logentry_add_action_flag_choices.py first seen with mtime 1733330090.6498342
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\migrations\0002_logentry_remove_auto_add.py first seen with mtime 1733330090.6488357
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\migrations\loader.py first seen with mtime 1733330093.9616976
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\sessions\migrations\__init__.py first seen with mtime 1733330093.50553
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\sessions\backends\db.py first seen with mtime 1733330093.189899
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\admin\migrations\__init__.py first seen with mtime 1733330090.6498342
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\migrations\0004_alter_user_username_opts.py first seen with mtime 1733330091.4557822
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\contenttypes\migrations\0001_initial.py first seen with mtime 1733330091.734542
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\migrations\graph.py first seen with mtime 1733330093.9606996
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\db\models\sql\compiler.py first seen with mtime 1733330094.014219
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\migrations\0006_require_contenttypes_0002.py first seen with mtime 1733330091.4577785
+File C:\Users\gugaa\AppData\Local\Programs\Python\Python312\Lib\stringprep.py first seen with mtime 1696253158.0
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\auth\migrations\0009_alter_user_last_name_max_length.py first seen with mtime 1733330091.4607742
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\sessions\migrations\0001_initial.py first seen with mtime 1733330093.50553
+"GET / HTTP/1.1" 200 12068
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\urls\resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\template\base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2207
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\sessions\serializers.py first seen with mtime 1733330093.1849022
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\messages\storage\fallback.py first seen with mtime 1733330092.6852894
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\messages\storage\session.py first seen with mtime 1733330092.6862893
+File C:\Users\gugaa\Desktop\meta2\eb-virt\Lib\site-packages\django\contrib\messages\storage\cookie.py first seen with mtime 1733330092.6842892
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
