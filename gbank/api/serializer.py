@@ -1,7 +1,6 @@
 from rest_framework import serializers
-from base.models import *
+from base.models import LoanRequest  # Importa LoanRequest do app base
 from django.contrib.auth.models import User
-from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:

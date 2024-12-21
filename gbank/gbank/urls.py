@@ -1,9 +1,9 @@
 from django.contrib import admin
 from django.urls import path, include
-from base.views import home  # Importando a nova view
+from .views import home  # Importa a view `home` do arquivo views.py
 
 urlpatterns = [
-    path('', home, name='home'),  # Página inicial
     path('admin/', admin.site.urls),
-    path('api/', include('gbank.api.urls')),
+    path('api/', include('api.urls')),  # Inclui as URLs do app `api`
+    path('', home, name='home'),  # Define uma view para a raiz
 ]

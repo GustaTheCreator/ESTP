@@ -3,11 +3,9 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
-from base.models import *
+from base.models import LoanRequest  # Certifique-se de que LoanRequest está em base.models
 from django.contrib.auth.models import User
-from gbank.api.serializers import UserSerializer, Loan, LoanRequest, LoanRequestSerializer
-
-
+from api.serializer import UserSerializer, LoanRequestSerializer  # Ajuste o caminho
 
 
 # ViewSets
