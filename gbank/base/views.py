@@ -1,3 +1,4 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+def home(request):
+    return HttpResponse("<h1>Bem-vindo à API do Gbank</h1><p>Use os endpoints /api/login/ ou /api/loan-requests/.</p>")
