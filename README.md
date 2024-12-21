@@ -22,6 +22,7 @@ gbank/
 │   ├── urls.py
 │   ├── wsgi.py
 │   ├── asgi.py
-│   └── ...
+│   └── views.py
+├── frontend/
 └── manage.py
 ```
