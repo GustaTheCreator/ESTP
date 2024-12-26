@@ -19,10 +19,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
-AWS_ACCESS_KEY_ID = 'your-access-key-id'
-AWS_SECRET_ACCESS_KEY = 'your-secret-access-key'
-AWS_REGION = 'your-region'  # Exemplo: 'us-east-1'
+AWS_ACCESS_KEY_ID = 'ASIAROIUILMUKS5CNMKR'
+AWS_SECRET_ACCESS_KEY = 'sldUdEnSWBCiGHiRg7e5vILhNu1WHTxwMgbYaAzC'
+AWS_REGION = 'IQoJb3JpZ2luX2VjEFkaCXVzLXdlc3QtMiJHMEUCIQDgtwyY7Zv2NyJCgAW2eMXBwxkynK2RWtHjPlMXAcGnSAIgCDR3OjwjR2u5q8AyS30adjyuticQRLCvokWBxrMkIxsqtAIIMhAAGgwwOTkzNjM2MDkzODQiDMCN3NaeDkVSVGUw+yqRAjEi6nkwPAcf9eitLMtwBZ+zAtJrkqK4WbiQ/GQat3pbZ37ErYOHVLmKW8V05ag21eXBzUMtBNaj7YCw1qclvA/yKPNbHIDeRNkwXvadvFhhF/eTfTVlhkdvwtCKkvNLFgp8Xl5Z8h+lteUd4FNsvhOC6W7uVmvImju17jGQDAQg9/YaY/SgkIyPBCDZ7C5TO/U2KOd28E4tR6xDcy21hyEz9mEuFBTu8AaxYjvbJXSuexLEzyAwr2BAHGsoFX+KMLWu99HWFgKP02dl5wRrmQkwIiKcEcaHK20Likvt5AJPqtjELN5S3k9DEy1cSiUP7XcSafSZa31qsC/rW+zWsk2ZWYUwdwaYxtjj/yYYrDzFbjDpmra7BjqdAUVNkaEe5WoiNYvPx8hnVPKPBFBPXnlyhSF+UcUpp4ACjhQVFbvvAan2IgIU8Ouzvq8SKXZyNDcL7AQQpjNEuYbztVufah4Gx9JT/xCUc8tr80+n/uqomJx6youvEMjByjfmXs40YRikhIPzJXugMLkmHrDcKljEOc9y2XL2tXh+AvnNI1yJuuAOpxgsJLmzJxCx4ol1YYRQAPOTIyQ='
 
+# DynamoDB Table Name
+DYNAMODB_TABLE_NAME = 'LoanRequests'
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-q#h=hq%jlklf1m!v^t!hb31u1+-g%5pcl@jy+u8!mog)=)l397'
@@ -46,6 +48,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',  # JWT Authentication
     'base',  # Sua aplicação para modelos
     'api',   # Sua aplicação para endpoints
+    'storages',  # Django Storages
 ]
 
 
@@ -85,8 +88,12 @@ WSGI_APPLICATION = 'gbank.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'gbank',
+        'USER': 'admin',
+        'PASSWORD': 'D7PnmFawZ2AHqA1tut20',
+        'HOST': 'databasegbank.cmavfsuo9bw8.us-east-1.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
 

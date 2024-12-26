@@ -2,9 +2,9 @@ import boto3
 import os
 
 def lambda_handler(event, context):
-    s3 = boto3.client('s3')
-    bucket_name = event['bucket_name']
-    document_key = event['document_key']
+    s3 = boto3.client('s3', region_name='us-east-1')
+    bucket_name = event['baldinhos']
+    document_key = event['document_key'] # Nome do arquivo no S3
     
     # Baixar o documento do S3
     document = s3.get_object(Bucket=bucket_name, Key=document_key)

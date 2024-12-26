@@ -1,13 +1,28 @@
 import boto3
+import django
+import os
+
+# Setup Django environment to access settings.py
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'gbank.settings')
+django.setup()
+
+from django.conf import settings
 
 def lambda_handler(event, context):
     loan_request_id = event.get('loan_request_id')
     score = event.get('score')
     decision = event.get('decision')  # Aceitar, Entrevista, Rejeitar
     
-    # Lógica de processamento (exemplo de atualizar status)
-    dynamodb = boto3.resource('dynamodb')
-    table = dynamodb.Table('LoanRequests')
+     # Atualizando status do pedido de empréstimo (exemplo com DynamoDB)
+    dynamodb = boto3.resource(
+        'dynamodb',
+        aws_access_key_id=settings.AWS_ACCESS_KEY_ID,
+        aws_secret_access_key=settings.AWS_SECRET_ACCESS_KEY,
+        region_name=settings.AWS_REGION_NAME
+    )
+
+    table = dynamodb.Table(settings.DYNAMODB_TABLE_NAME)
+
     
     # Atualiza o status do empréstimo no banco de dados
     table.update_item(
