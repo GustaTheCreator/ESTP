@@ -1,3 +1,4 @@
+#gbank/urls.py
 from django.contrib import admin
 from django.urls import path, include
 from .views import home  # Importa a view `home` do arquivo views.py

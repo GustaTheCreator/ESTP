@@ -22,6 +22,8 @@ estp/
 ├── README.md
 ├── .devcontainer/
 ├── eb-virt/
+│   └── Scripts/
+│       └── activate
 ├── AWS/
 │   ├── lamdafunctions/
 │   │   ├── calculate_credit_score.py

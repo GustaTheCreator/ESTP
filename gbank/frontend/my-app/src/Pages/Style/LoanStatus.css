@@ -1,0 +1,40 @@
+/* LoanStatus.css */
+
+/* Contêiner principal */
+.loan-status-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título */
+.loan-status-container h2 {
+    color: #28a745;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Texto de status */
+.loan-status-container p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Links */
+.loan-status-container .nav-link {
+    text-decoration: none;
+    color: #28a745;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse nos links */
+.loan-status-container .nav-link:hover {
+    color: #1e7e34;
+}
