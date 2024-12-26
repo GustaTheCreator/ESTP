@@ -86,16 +86,16 @@ WSGI_APPLICATION = 'gbank.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'gbank',
-        'USER': 'admin',
-        'PASSWORD': 'D7PnmFawZ2AHqA1tut20',
-        'HOST': 'databasegbank.cmavfsuo9bw8.us-east-1.rds.amazonaws.com',
-        'PORT': '3306',
-    }
-}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'gbank',
+#        'USER': 'admin',
+#        'PASSWORD': 'D7PnmFawZ2AHqA1tut20',
+#        'HOST': 'databasegbank.cmavfsuo9bw8.us-east-1.rds.amazonaws.com',
+#        'PORT': '3306',
+#    }
+#}
 
 
 # Password validation
