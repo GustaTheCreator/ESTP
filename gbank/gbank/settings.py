@@ -19,15 +19,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
-AWS_ACCESS_KEY_ID = ''
-AWS_SECRET_ACCESS_KEY = ''
-AWS_REGION = ''
+#AWS_ACCESS_KEY_ID = ''
+#AWS_SECRET_ACCESS_KEY = ''
+#AWS_REGION = ''
 
 # DynamoDB Table Name
 DYNAMODB_TABLE_NAME = 'LoanRequests'
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-q#h=hq%jlklf1m!v^t!hb31u1+-g%5pcl@jy+u8!mog)=)l397'
+#SECRET_KEY = 'django-insecure-q#h=hq%jlklf1m!v^t!hb31u1+-g%5pcl@jy+u8!mog)=)l397'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
