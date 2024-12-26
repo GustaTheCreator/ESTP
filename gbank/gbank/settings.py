@@ -19,9 +19,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
-AWS_ACCESS_KEY_ID = 'ASIAROIUILMUKS5CNMKR'
-AWS_SECRET_ACCESS_KEY = 'sldUdEnSWBCiGHiRg7e5vILhNu1WHTxwMgbYaAzC'
-AWS_REGION = 'IQoJb3JpZ2luX2VjEFkaCXVzLXdlc3QtMiJHMEUCIQDgtwyY7Zv2NyJCgAW2eMXBwxkynK2RWtHjPlMXAcGnSAIgCDR3OjwjR2u5q8AyS30adjyuticQRLCvokWBxrMkIxsqtAIIMhAAGgwwOTkzNjM2MDkzODQiDMCN3NaeDkVSVGUw+yqRAjEi6nkwPAcf9eitLMtwBZ+zAtJrkqK4WbiQ/GQat3pbZ37ErYOHVLmKW8V05ag21eXBzUMtBNaj7YCw1qclvA/yKPNbHIDeRNkwXvadvFhhF/eTfTVlhkdvwtCKkvNLFgp8Xl5Z8h+lteUd4FNsvhOC6W7uVmvImju17jGQDAQg9/YaY/SgkIyPBCDZ7C5TO/U2KOd28E4tR6xDcy21hyEz9mEuFBTu8AaxYjvbJXSuexLEzyAwr2BAHGsoFX+KMLWu99HWFgKP02dl5wRrmQkwIiKcEcaHK20Likvt5AJPqtjELN5S3k9DEy1cSiUP7XcSafSZa31qsC/rW+zWsk2ZWYUwdwaYxtjj/yYYrDzFbjDpmra7BjqdAUVNkaEe5WoiNYvPx8hnVPKPBFBPXnlyhSF+UcUpp4ACjhQVFbvvAan2IgIU8Ouzvq8SKXZyNDcL7AQQpjNEuYbztVufah4Gx9JT/xCUc8tr80+n/uqomJx6youvEMjByjfmXs40YRikhIPzJXugMLkmHrDcKljEOc9y2XL2tXh+AvnNI1yJuuAOpxgsJLmzJxCx4ol1YYRQAPOTIyQ='
+AWS_ACCESS_KEY_ID = ''
+AWS_SECRET_ACCESS_KEY = ''
+AWS_REGION = ''
 
 # DynamoDB Table Name
 DYNAMODB_TABLE_NAME = 'LoanRequests'
