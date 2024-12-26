@@ -1,0 +1,10 @@
+.nav-link {
+    text-decoration: none;
+    color: #28a745;
+    font-size: 18px;
+  }
+  
+  .nav-link:hover {
+    color: #1e7e34;
+  }
+  
