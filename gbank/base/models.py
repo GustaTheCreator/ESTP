@@ -25,6 +25,11 @@ class LoanRequest(models.Model):
     credit_score = models.IntegerField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    workflow_id = models.CharField(max_length=255, null=True, blank=True)
+    interview_needed = models.BooleanField(default=False)
+    interview_date = models.DateTimeField(null=True, blank=True)
+    deadline = models.DateTimeField(null=True, blank=True)
 
+    
     def __str__(self):
         return f"LoanRequest {self.id} by {self.user.username}"

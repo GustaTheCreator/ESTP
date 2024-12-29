@@ -9,9 +9,15 @@ import LoanDetails from './Pages/LoanDetails';
 import LoanRequestsManager from './Pages/LoanRequestsManager';
 import LoanSimulator from './Pages/LoanSimulator';
 import InterviewScheduler from './Pages/InterviewScheduler';
+import Register from './Pages/Register';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import { UserProvider } from './context/UserContext';
+
 
 function App() {
   return (
+    <UserProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -22,9 +28,11 @@ function App() {
         <Route path="/loan-requests-manager" element={<LoanRequestsManager />} />
         <Route path="/loan-simulator" element={<LoanSimulator />} />
         <Route path="/interview-scheduler" element={<InterviewScheduler />} />
+        <Route path="/register" element={<Register />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
+    </UserProvider>
   );
 }
 

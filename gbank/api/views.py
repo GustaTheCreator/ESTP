@@ -7,7 +7,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from base.models import LoanRequest  # Certifique-se de que LoanRequest está em base.models
 from django.contrib.auth.models import User
 from api.serializer import UserSerializer, LoanRequestSerializer  # Ajuste o caminho
-from rest_framework.permissions import IsAdminUser
+from rest_framework.permissions import IsAdminUser, AllowAny, IsAuthenticated, IsAuthenticatedOrReadOnly
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.decorators import permission_classes
 
@@ -16,6 +16,19 @@ class LoanRequestViewSet(viewsets.ModelViewSet):
     serializer_class = LoanRequestSerializer
     permission_classes = [IsAuthenticated]
     Pagination_class = PageNumberPagination
+
+    permission_classes_by_action = {
+    'list': [IsAuthenticated],
+    'create': [IsAuthenticated],
+    'update': [IsAdminUser],
+    'destroy': [IsAdminUser],
+    }
+
+    def get_permissions(self):
+        try:
+            return [permission() for permission in self.permission_classes_by_action[self.action]]
+        except KeyError:
+            return [permission() for permission in self.permission_classes]
 
     def get_queryset(self):
         if self.request.user.is_staff:
@@ -29,7 +42,7 @@ class LoanRequestViewSet(viewsets.ModelViewSet):
     
     def create(self, request, *args, **kwargs):
         data = request.data
-        if data['amount'] <= 0 or data['duration_months'] <= 0:
+        if float(data['amount']) <= 0 or int(data['duration_months']) <= 0:
             return Response({'error': 'Amount and duration must be positive values'}, status=400)
         data['user'] = request.user.id  # Associa automaticamente o usuário autenticado
         serializer = self.get_serializer(data=data)
@@ -40,6 +53,7 @@ class LoanRequestViewSet(viewsets.ModelViewSet):
 
 # JWT Authentication Endpoints
 @api_view(['POST'])
+@permission_classes([AllowAny])
 def login(request):
     username = request.data.get('username')
     password = request.data.get('password')
@@ -54,6 +68,7 @@ def login(request):
     return Response({'error': 'Invalid credentials'}, status=400)
 
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
 def logout(request):
     try:
         refresh_token = request.data.get('refresh_token')
@@ -62,6 +77,15 @@ def logout(request):
         return Response({'message': 'Logged out successfully.'})
     except Exception as e:
         return Response({'error': str(e)}, status=400)
+    
+@api_view(['POST'])
+@permission_classes([AllowAny])
+def register(request):
+    serializer = UserSerializer(data=request.data)
+    serializer.is_valid(raise_exception=True)
+    serializer.save()
+    return Response(serializer.data, status=201)
+    
     
 @api_view(['PATCH'])
 @permission_classes([IsAdminUser])
@@ -82,6 +106,7 @@ def update_loan_status(request, pk):
         return Response({'error': 'Loan request not found'}, status=404)
     
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def loan_detail(request, pk):
     try:
         loan_request = LoanRequest.objects.get(pk=pk, user=request.user)
@@ -91,6 +116,7 @@ def loan_detail(request, pk):
         return Response({'error': 'Loan request not found'}, status=404)
     
 @api_view(['DELETE'])
+@permission_classes([IsAuthenticated])
 def cancel_loan_request(request, pk):
     try:
         loan_request = LoanRequest.objects.get(pk=pk, user=request.user, status='pending')
@@ -100,6 +126,7 @@ def cancel_loan_request(request, pk):
         return Response({'error': 'Loan request not found or cannot be canceled'}, status=404)
     
 @api_view(['GET'])
+@permission_classes([IsAdminUser])
 def loan_statistics(request):
     if not request.user.is_staff:
         return Response({'error': 'Permission denied'}, status=403)
@@ -111,6 +138,18 @@ def loan_statistics(request):
         'rejected': LoanRequest.objects.filter(status='rejected').count(),
     }
     return Response(statistics)
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def start_workflow(request, pk):
+    try:
+        loan_request = LoanRequest.objects.get(pk=pk, user=request.user)
+        # Chamar a AWS Step Functions aqui e salvar o workflow_id
+        loan_request.workflow_id = "workflow-id-example"
+        loan_request.save()
+        return Response({'message': 'Workflow started', 'workflow_id': loan_request.workflow_id})
+    except LoanRequest.DoesNotExist:
+        return Response({'error': 'Loan request not found'}, status=404)
 
 
 

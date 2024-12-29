@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Style/LoanRequest.css'; // Arquivo de estilos
 
 const LoanRequest = () => {
     const [amount, setAmount] = useState('');
@@ -42,22 +43,28 @@ const LoanRequest = () => {
     };
 
     return (
-        <div>
-            <h2>Solicitar Empréstimo</h2>
-            {error && <p style={{ color: 'red' }}>{error}</p>}
-            <input
-                type="number"
-                placeholder="Valor"
-                value={amount}
-                onChange={(e) => setAmount(e.target.value)}
-            />
-            <input
-                type="number"
-                placeholder="Duração em meses"
-                value={duration}
-                onChange={(e) => setDuration(e.target.value)}
-            />
-            <button onClick={submitLoanRequest}>Enviar</button>
+        <div className="loan-request-container">
+            <h2 className="loan-request-title">Solicitar Empréstimo</h2>
+            {error && <p className="loan-request-error">{error}</p>}
+            <div className="loan-request-form">
+                <input
+                    type="number"
+                    placeholder="Valor do Empréstimo (€)"
+                    value={amount}
+                    onChange={(e) => setAmount(e.target.value)}
+                    className="loan-request-input"
+                />
+                <input
+                    type="number"
+                    placeholder="Duração em Meses"
+                    value={duration}
+                    onChange={(e) => setDuration(e.target.value)}
+                    className="loan-request-input"
+                />
+                <button onClick={submitLoanRequest} className="loan-request-button">
+                    Enviar
+                </button>
+            </div>
         </div>
     );
 };

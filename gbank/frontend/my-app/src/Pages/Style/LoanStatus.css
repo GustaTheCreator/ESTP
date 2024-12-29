@@ -1,40 +1,63 @@
-/* LoanStatus.css */
-
-/* Contêiner principal */
 .loan-status-container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 50px auto;
     padding: 20px;
     background-color: #f9f9f9;
-    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-
-/* Título */
-.loan-status-container h2 {
+  }
+  
+  .loan-status-title {
+    font-size: 24px;
+    font-weight: bold;
     color: #28a745;
     margin-bottom: 20px;
-    font-size: 1.8em;
-}
-
-/* Texto de status */
-.loan-status-container p {
-    font-size: 1.2em;
+  }
+  
+  .loan-status-item {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .loan-status-id, .loan-status-amount, .loan-status-status {
+    font-size: 16px;
     color: #333;
-    margin: 10px 0;
-}
-
-/* Links */
-.loan-status-container .nav-link {
-    text-decoration: none;
-    color: #28a745;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-/* Efeito ao passar o mouse nos links */
-.loan-status-container .nav-link:hover {
-    color: #1e7e34;
-}
+  }
+  
+  .loan-status-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .loan-status-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .loan-status-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .loan-status-button:hover:not(:disabled) {
+    background-color: #1e7e34;
+  }
+  
+  .loan-status-page-info {
+    font-size: 16px;
+    color: #333;
+  }
+  

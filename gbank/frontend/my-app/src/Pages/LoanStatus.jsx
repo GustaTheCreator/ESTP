@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Style/LoanStatus.css'; // Arquivo de estilos
 
 const LoanStatus = () => {
     const [loans, setLoans] = useState([]);
@@ -31,22 +32,32 @@ const LoanStatus = () => {
     };
 
     return (
-        <div>
-            <h2>Status das Solicitações</h2>
+        <div className="loan-status-container">
+            <h2 className="loan-status-title">Status das Solicitações</h2>
             {loans.map((loan) => (
-                <div key={loan.id}>
-                    <p>ID: {loan.id}</p>
-                    <p>Valor: {loan.amount}</p>
-                    <p>Status: {loan.status}</p>
+                <div key={loan.id} className="loan-status-item">
+                    <p className="loan-status-id">ID: {loan.id}</p>
+                    <p className="loan-status-amount">Valor: € {loan.amount}</p>
+                    <p className="loan-status-status">Status: {loan.status}</p>
                 </div>
             ))}
-            <div>
-                <button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
-                    Anterior
+            <div className="loan-status-pagination">
+                <button 
+                    onClick={() => handlePageChange(currentPage - 1)} 
+                    disabled={currentPage === 1} 
+                    className="loan-status-button styled-button"
+                >
+                    ⬅ Anterior
                 </button>
-                <span>Página {currentPage} de {totalPages}</span>
-                <button onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages}>
-                    Próximo
+                <span className="loan-status-page-info">
+                    Página {currentPage} de {totalPages}
+                </span>
+                <button 
+                    onClick={() => handlePageChange(currentPage + 1)} 
+                    disabled={currentPage === totalPages} 
+                    className="loan-status-button styled-button"
+                >
+                    Próximo ➡
                 </button>
             </div>
         </div>

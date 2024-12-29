@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -19,9 +20,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
-AWS_ACCESS_KEY_ID = ''
-AWS_SECRET_ACCESS_KEY = ''
-AWS_REGION = ''
+# AWS settings
+AWS_REGION = 'us-east-1'
+
 
 # DynamoDB Table Name
 DYNAMODB_TABLE_NAME = 'LoanRequests'
@@ -32,7 +33,7 @@ SECRET_KEY = 'django-insecure-q#h=hq%jlklf1m!v^t!hb31u1+-g%5pcl@jy+u8!mog)=)l397
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']  # Apenas para desenvolvimento; em produção, restrinja.
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -134,7 +135,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -151,7 +151,30 @@ REST_FRAMEWORK = {
 }
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'  # Em produção, use 'collectstatic'
+STATICFILES_DIRS = [
+    BASE_DIR / 'frontend/my-app/build/static',  # Certifique-se de apontar para o build do React
+]
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # Evite conflito com STATICFILES_DIRS
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Directory for media files
+MEDIA_URL = '/media/'  # URL for accessing media files
+
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
 
 
 LOGGING = {
@@ -184,4 +207,16 @@ SIMPLE_JWT = {
     'SIGNING_KEY': SECRET_KEY,
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
+
+INSTALLED_APPS += ['corsheaders']
+
+MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    *MIDDLEWARE,
+]
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
 

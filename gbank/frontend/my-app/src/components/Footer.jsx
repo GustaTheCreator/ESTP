@@ -1,12 +1,19 @@
 import React from 'react';
-import './Style/Header.css';
+import './Style/Footer.css';
 
-const Header = () => {
+const Footer = () => {
   return (
-    <header className="header">
-      <h1>Gbank</h1>
-    </header>
+    <footer className="footer">
+      <div className="footer-content">
+        <p>&copy; {new Date().getFullYear()} GBank. Todos os direitos reservados.</p>
+        <ul className="footer-links">
+          <li><a href="/privacy" className="footer-link">Política de Privacidade</a></li>
+          <li><a href="/terms" className="footer-link">Termos de Uso</a></li>
+          <li><a href="/contact" className="footer-link">Fale Conosco</a></li>
+        </ul>
+      </div>
+    </footer>
   );
 };
 
-export default Header;
+export default Footer;

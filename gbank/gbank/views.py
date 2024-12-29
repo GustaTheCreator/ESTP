@@ -1,5 +1,6 @@
-#gbank/views.py
 from django.http import HttpResponse
+from django.shortcuts import render
+
 
 def home(request):
-    return HttpResponse("<h1>Bem-vindo à API do GBank!</h1>")
+    return render(request, 'index.html')

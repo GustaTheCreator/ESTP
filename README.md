@@ -1,5 +1,11 @@
 # ESTP
 
+ligar o ambiente virtual
+
+```bash
+.\eb-virt\Scripts\activate   
+```
+
 correr backend
 
 ```bash
@@ -42,10 +48,6 @@ estp/
     ├── base/
     │   ├── __init__.py
     │   ├── models.py
-    │   ├── apps.py
-    │   ├── tests.py
-    │   ├── views.py
-    │   └── admin.py
     ├── gbank/
     │   ├── __init__.py
     │   ├── settings.py
