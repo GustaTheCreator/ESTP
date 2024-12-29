@@ -21,4 +21,5 @@ urlpatterns = [
     path('loan-requests-manager/', TemplateView.as_view(template_name='index.html')),
     path('loan-simulator/', TemplateView.as_view(template_name='index.html')),
     path('interview-scheduler/', TemplateView.as_view(template_name='index.html')),
+    path('rekognition/', TemplateView.as_view(template_name='index.html')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

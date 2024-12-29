@@ -1,13 +1,4 @@
 import boto3
-import datetime
-import django
-import os
-
-# Setup Django environment to access settings.py
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'gbank.settings')
-django.setup()
-
-from django.conf import settings
 
 def lambda_handler(event, context):
     # Extrair dados do evento
@@ -26,8 +17,7 @@ def lambda_handler(event, context):
     # Atualizando status do pedido de empréstimo (exemplo com DynamoDB)
     dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
     
-    table_name = settings.DYNAMODB_TABLE_NAME
-    table = dynamodb.Table(table_name)
+    table = dynamodb.Table('LoanRequests')
 
     table.update_item(
         Key={'user_id': user_id},

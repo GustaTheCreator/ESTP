@@ -16,5 +16,5 @@ urlpatterns = [
     path('loan-requests/<int:pk>/cancel/', cancel_loan_request, name='cancel-loan-request'),
     path('loan-requests/statistics/', loan_statistics, name='loan-statistics'),
     path('register/', register, name='register'),
-    path('rekognition', faceRecognition, name='rekognition'),
+    path('rekognition/', faceRecognition, name='rekognition'),
 ]
