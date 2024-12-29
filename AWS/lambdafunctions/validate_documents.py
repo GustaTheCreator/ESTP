@@ -1,9 +1,10 @@
 import boto3
 import os
 
+
 def lambda_handler(event, context):
     s3 = boto3.client('s3', region_name='us-east-1')
-    bucket_name = event['baldinhos']
+    bucket_name = 'elasticbeanstalk-us-east-1-099363609384'
     document_key = event['document_key'] # Nome do arquivo no S3
     
     # Baixar o documento do S3

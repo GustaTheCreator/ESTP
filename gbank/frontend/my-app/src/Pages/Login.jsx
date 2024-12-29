@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Style/Login.css'; // Arquivo de estilos
+import { Route } from 'react-router-dom';
 
 const Login = () => {
     const [username, setUsername] = useState('');
@@ -19,6 +20,7 @@ const Login = () => {
                 localStorage.setItem('access_token', data.access);
                 localStorage.setItem('refresh_token', data.refresh);
                 alert('Login bem-sucedido!');
+                Route('/recognition');
             } else {
                 alert('Erro ao fazer login.');
             }            

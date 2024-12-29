@@ -166,7 +166,7 @@ MEDIA_URL = '/media/'  # URL for accessing media files
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'frontend/my-app/build')],  # Certifique-se de apontar para o build do React
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -223,3 +223,6 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 
+
+# S3 BUCKET CONFIGURATION
+AWS_STORAGE_BUCKET_NAME = 'elasticbeanstalk-us-east-1-099363609384'
