@@ -19,7 +19,7 @@ python manage.py runserver
 
 deploy
 
-Em C:\Users\%UTILIZADOR%\.aws criei um arquivo chamado credentials com o seguinte conteudo
+Em C:\Users\%UTILIZADOR%\.aws crei um arquivo chamado credentials com o seguinte conteudo
 
 ```plaintext
 [default]
