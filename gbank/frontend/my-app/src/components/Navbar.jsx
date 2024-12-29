@@ -39,7 +39,8 @@ const Navbar = () => {
         {!user ? (
           <>
             <Link to="/login" className="nav-link">Login</Link>
-            <Link to="/register" className="nav-link">Registrar</Link>
+            <Link to="/register" className="nav-link">Registar</Link>
+            <Link to="/recognition" className="nav-link">Reconhecimento Facial</Link>
           </>
         ) : (
           <button onClick={handleLogout} className="nav-link logout-button">Logout</button>

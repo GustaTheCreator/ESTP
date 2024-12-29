@@ -13,7 +13,7 @@ import Register from './Pages/Register';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { UserProvider } from './context/UserContext';
-
+import Recognition from './Pages/Recognition';
 
 function App() {
   return (
@@ -29,6 +29,7 @@ function App() {
         <Route path="/loan-simulator" element={<LoanSimulator />} />
         <Route path="/interview-scheduler" element={<InterviewScheduler />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/recognition" element={<Recognition />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>

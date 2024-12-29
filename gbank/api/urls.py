@@ -2,7 +2,7 @@
 from django.urls import path, include
 from rest_framework import routers
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-from api.views import LoanRequestViewSet, login, logout, update_loan_status, loan_detail, cancel_loan_request, loan_statistics, register
+from api.views import LoanRequestViewSet, login, logout, update_loan_status, loan_detail, cancel_loan_request, loan_statistics, register, faceRecognition
 
 router = routers.DefaultRouter()
 router.register(r'loan-requests', LoanRequestViewSet, basename='loan-requests')
@@ -16,6 +16,5 @@ urlpatterns = [
     path('loan-requests/<int:pk>/cancel/', cancel_loan_request, name='cancel-loan-request'),
     path('loan-requests/statistics/', loan_statistics, name='loan-statistics'),
     path('register/', register, name='register'),
-
-
+    path('rekognition', faceRecognition, name='rekognition'),
 ]

@@ -24,14 +24,10 @@ def lambda_handler(event, context):
     result = f"Entrevista agendada para o {chosen_time}."
     
     # Atualizando status do pedido de empréstimo (exemplo com DynamoDB)
-    dynamodb = boto3.resource(
-        'dynamodb',
-        aws_access_key_id=settings.AWS_ACCESS_KEY_ID,
-        aws_secret_access_key=settings.AWS_SECRET_ACCESS_KEY,
-        region_name=settings.AWS_REGION_NAME
-    )
-
-    table = dynamodb.Table(settings.DYNAMODB_TABLE_NAME)
+    dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
+    
+    table_name = settings.DYNAMODB_TABLE_NAME
+    table = dynamodb.Table(table_name)
 
     table.update_item(
         Key={'user_id': user_id},

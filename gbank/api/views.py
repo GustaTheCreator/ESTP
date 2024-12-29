@@ -10,6 +10,8 @@ from api.serializer import UserSerializer, LoanRequestSerializer  # Ajuste o cam
 from rest_framework.permissions import IsAdminUser, AllowAny, IsAuthenticated, IsAuthenticatedOrReadOnly
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.decorators import permission_classes
+import boto3, os, base64
+from django.conf import settings
 
 class LoanRequestViewSet(viewsets.ModelViewSet):
     queryset = LoanRequest.objects.all()
@@ -152,7 +154,53 @@ def start_workflow(request, pk):
         return Response({'error': 'Loan request not found'}, status=404)
 
 
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def faceRecognition(request):
+    rekognition = boto3.client(
+        'rekognition',
+        aws_access_key_id=settings.AWS_ACCESS_KEY_ID,
+        aws_secret_access_key=settings.AWS_SECRET_ACCESS_KEY,
+        aws_session_token=settings.AWS_SESSION_TOKEN,
+        region_name=settings.AWS_REGION
+    )
 
+    s3 = boto3.resource(
+        's3',
+        aws_access_key_id=settings.AWS_ACCESS_KEY_ID,
+        aws_secret_access_key=settings.AWS_SECRET_ACCESS_KEY,
+        aws_session_token=settings.AWS_SESSION_TOKEN,
+        region_name=settings.AWS_REGION
+    )
+
+
+    bucket = s3.Bucket("baldinhos")
+
+    target = request.data.get('img')
+
+    authorized = False
+
+    for i in bucket.objects.all():
+        path, filename = os.path.split(i.key)
+        img = bucket.Object(filename)
+        
+        resp = rekognition.compare_faces(
+            SimilarityThreshold=75,
+            SourceImage={'Bytes': img.get()['Body'].read()},
+            TargetImage={'Bytes': base64.b64decode(target)}
+        )
+        
+        for match in resp['FaceMatches']:
+            authorized = True
+            break
+        
+        if authorized:
+            break
+            
+    if authorized:
+        return Response({'AUTH': True, 'message': 'Face recognized.'}, status=status.HTTP_200_OK)
+    else:
+        return Response({'AUTH': False, 'error': 'Face not recognized.'}, status=status.HTTP_401_UNAUTHORIZED)
 
 
 # Routers
