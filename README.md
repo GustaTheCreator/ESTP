@@ -39,8 +39,7 @@ eb init # regiao us-east-1
 E depois
 
 ```bash
-eb create django-env --service-role LabRole --keyname
-vockey --instance_profile LabInstanceProfile
+eb create django-env --service-role LabRole --keyname vockey --instance_profile LabInstanceProfile
 ```
 
 Para fazer o deploy
