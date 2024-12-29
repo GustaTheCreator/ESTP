@@ -17,6 +17,39 @@ cd ..
 python manage.py runserver
 ```
 
+deploy
+
+Em C:\Users\%UTILIZADOR%\.aws crei um arquivo chamado credentials com o seguinte conteudo
+
+```plaintext
+[default]
+aws_access_key_id=****
+aws_secret_access_key=****
+aws_session_token=*****
+```
+
+O conteúdo do arquivo credentials é obtido no Vocaruem AWS Details
+
+Depois de configurar o arquivo credentials, execute o seguinte comando para começar o deploy (SEM SSH)
+
+```bash
+eb init # regiao us-east-1
+```
+
+E depois
+
+```bash
+eb create django-env --service-role LabRole --keyname
+vockey --instance_profile LabInstanceProfile
+```
+
+Para fazer o deploy
+
+```bash
+eb open
+eb deploy
+```
+
 ### Arquitetura
 
 ```plaintext
