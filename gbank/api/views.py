@@ -174,8 +174,7 @@ def faceRecognition(request):
     )
 
 
-    bucket = s3.Bucket("baldinhos")
-
+    bucket = settings.AWS_STORAGE_BUCKET_NAME
     target = request.data.get('img')
 
     authorized = False
@@ -198,9 +197,9 @@ def faceRecognition(request):
             break
             
     if authorized:
-        return Response({'AUTH': True, 'message': 'Face recognized.'}, status=status.HTTP_200_OK)
+        return Response({'AUTH': True, 'message': 'Face recognized.'}, status=200)
     else:
-        return Response({'AUTH': False, 'error': 'Face not recognized.'}, status=status.HTTP_401_UNAUTHORIZED)
+        return Response({'AUTH': False, 'error': 'Face not recognized.'}, status=401)
 
 
 # Routers

@@ -33,14 +33,11 @@ const Navbar = () => {
     <nav className="navbar">
       <ul>
         <Link to="/" className="nav-link">GBank</Link>
-        <Link to="/loan-requests" className="nav-link">Fazer um Pedido de Empréstimo</Link>
         <Link to="/loan-simulator" className="nav-link">Simular Empréstimo</Link>
-        <Link to="/loan-status" className="nav-link">Ver Status de Empréstimo</Link>
         {!user ? (
           <>
             <Link to="/login" className="nav-link">Login</Link>
             <Link to="/register" className="nav-link">Registar</Link>
-            <Link to="/recognition" className="nav-link">Reconhecimento Facial</Link>
           </>
         ) : (
           <button onClick={handleLogout} className="nav-link logout-button">Logout</button>

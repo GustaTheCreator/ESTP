@@ -4,7 +4,7 @@ const InterviewScheduler = ({ loanId }) => {
     const [timeSlots, setTimeSlots] = useState([]);
     const [selectedSlot, setSelectedSlot] = useState('');
 
-    const handleSendSlots = async () => {
+    const handleSendSlots = async () => { 
         try {
             const response = await fetch(`http://localhost:8000/api/loan-requests/${loanId}/schedule-interview/`, {
                 method: 'POST',

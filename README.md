@@ -6,19 +6,15 @@ ligar o ambiente virtual
 .\eb-virt\Scripts\activate   
 ```
 
-correr backend
+correr frontend e backend
 
 ```bash
 
-cd gbank
-python manage.py runserver
-```
-
-correr frontend
-
-```bash
 cd gbank/frontend/my-app
-npm start
+npm run build
+cd ..
+cd ..
+python manage.py runserver
 ```
 
 ### Arquitetura
