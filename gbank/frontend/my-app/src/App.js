@@ -14,6 +14,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { UserProvider } from './context/UserContext';
 import Recognition from './Pages/Recognition';
+import Admin from './Pages/Admin';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/recognition" element={<Recognition />} />
         <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
     </UserProvider>

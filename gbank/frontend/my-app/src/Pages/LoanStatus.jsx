@@ -39,6 +39,10 @@ const LoanStatus = () => {
                     <p className="loan-status-id">ID: {loan.id}</p>
                     <p className="loan-status-amount">Valor: € {loan.amount}</p>
                     <p className="loan-status-status">Status: {loan.status}</p>
+                    <p className="loan-status-date">Data: {loan.date}</p>
+                    <button 
+                        onClick={() => window.location.href = `/loan-details/${loan.id}`}
+                    className="loan-status-button styled-button">Detalhes</button> // Adiciona um botão para redirecionar para a página de detalhes
                 </div>
             ))}
             <div className="loan-status-pagination">
