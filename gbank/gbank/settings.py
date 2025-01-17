@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'base',  # Sua aplicação para modelos
     'api',   # Sua aplicação para endpoints
     'storages',  # Django Storages
+    'django_s3_storage',  # Django S3 Storage
+    'corsheaders',  # Django CORS Headers
 ]
 
 
@@ -211,17 +213,18 @@ SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
 
-INSTALLED_APPS += ['corsheaders']
 
 MIDDLEWARE = [
+    'django.middleware.common.BrokenLinkEmailsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
-    *MIDDLEWARE,
+    'django.middleware.common.CommonMiddleware'
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
+ALLOWED_HOSTS = ['*']
 
 
 # S3 BUCKET CONFIGURATION
